@@ -61,7 +61,7 @@ export default function Hero() {
         <div className="hero min-h-screen max-w-screen-lg">
             <div className="hero-content flex-col lg:flex-row gap-12 lg:w-full max-lg:mt-32">
                 <div id="hero-wrapper">
-                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-breathing">
+                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black sm:font-extrabold text-breathing">
                         NUTRIVERSE
                     </h1>
                     <p className="font-light pb-6 font-[family-name:var(--font-geist-mono)]">
