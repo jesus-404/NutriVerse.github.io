@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #ffffff;
+  --secondary: #cccccc;
+  --tertiary: #999999;
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low:
+    0.4px 0.4px 0.5px hsl(var(--shadow-color) / 0.44),
+    0.6px 0.6px 0.8px -2px hsl(var(--shadow-color) / 0.33),
+    1.5px 1.4px 1.8px -4px hsl(var(--shadow-color) / 0.22);
+  --shadow-elevation-medium:
+    0.4px 0.4px 0.5px hsl(var(--shadow-color) / 0.37),
+    0.7px 0.7px 0.9px -1px hsl(var(--shadow-color) / 0.31),
+    1.5px 1.5px 1.9px -2px hsl(var(--shadow-color) / 0.26),
+    3.5px 3.5px 4.5px -3px hsl(var(--shadow-color) / 0.2),
+    7.3px 7.2px 9.2px -4px hsl(var(--shadow-color) / 0.15);
+  --shadow-elevation-high:
+    0.4px 0.4px 0.5px hsl(var(--shadow-color) / 0.34),
+    0.9px 0.9px 1.1px -0.4px hsl(var(--shadow-color) / 0.32),
+    1.6px 1.6px 2px -0.9px hsl(var(--shadow-color) / 0.29),
+    2.7px 2.6px 3.4px -1.3px hsl(var(--shadow-color) / 0.26),
+    4.4px 4.4px 5.6px -1.8px hsl(var(--shadow-color) / 0.24),
+    7.1px 7px 9px -2.2px hsl(var(--shadow-color) / 0.21),
+    10.9px 10.9px 13.9px -2.7px hsl(var(--shadow-color) / 0.19),
+    16.2px 16.2px 20.6px -3.1px hsl(var(--shadow-color) / 0.16),
+    23.3px 23.2px 29.6px -3.6px hsl(var(--shadow-color) / 0.14),
+    32.3px 32.2px 41px -4px hsl(var(--shadow-color) / 0.11);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@-webkit-keyframes colorBreathing {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes colorBreathing {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes colorBreathing {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes colorBreathing {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes blink {
+  50% {color: transparent;}
+  100% {color: white;}
+}
+@-webkit-keyframes blink {
+  50% {color: transparent;}
+  100% {color: white;}
+}
+@-moz-keyframes blink {
+  50% {color: transparent;}
+  100% {color: white;}
+}
+@-o-keyframes blink {
+  50% {color: transparent;}
+  100% {color: white;}
+}

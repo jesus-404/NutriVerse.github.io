@@ -1,0 +1,54 @@
+.shadow-custom-sm {
+box-shadow: var(--shadow-elevation-sm);
+}
+
+.shadow-custom-md {
+box-shadow: var(--shadow-elevation-md);
+}
+
+.shadow-custom-lg {
+box-shadow: var(--shadow-elevation-high);
+}
+
+#nav-bar {
+    background-color: rgba(6, 6, 6, 0);
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.bg-custom {
+    background-color: rgba(6, 6, 6, 0.4) !important;
+}
+
+.text-breathing {
+    background: linear-gradient(290deg, var(--primary), #333333, var(--primary));
+    background-size: 600% 600%;
+    color:  transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+
+    -webkit-animation: colorBreathing 15s ease infinite;
+    -moz-animation: colorBreathing 15s ease infinite;
+    -o-animation: colorBreathing 15s ease infinite;
+    animation: colorBreathing 15s ease infinite;
+}
+
+.animate-blinking {
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+}
+
+#hero-wrapper {
+    height: 156px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 800ms;
+}
+.animate-stretch {
+    height: 236px !important;
+}
